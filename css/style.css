@@ -50,6 +50,11 @@ main {
     justify-content: center;
     align-items: center;
     border: 2px black solid;
+    cursor: pointer;
+}
+
+.boxclick {
+    background-color: wheat;
 }
 
 
