@@ -13,7 +13,7 @@ playButton.addEventListener(`click`, function (){
 function generateGrid(container) {
     container.innerHTML = ``;
 
-    for (let i = 0; i < 100: i++) {
+    for (let i = 0; i < 100; i++) {
         const cellElement = generateCell();
         container.append(cellElement);
     }
@@ -21,9 +21,14 @@ function generateGrid(container) {
 
 function generateCell() {
     const cell = document.createElement(`div`);
-    cell.clsddList.add(`box`);
+
+    cell.classList.add(`box`);
     cell.addEventListener(`click`, function () {
         this.classList.toggle(`toggle`);
     });
     return cell;
 }
+
+
+
+// E PER FARLO CONTARE CHE SI FA?
