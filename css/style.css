@@ -8,7 +8,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(249, 196, 118);
+
+    /* perchè non funziona? */
+    min-height: 100vh;
 }
+
 
 header {
     background-color: white;
@@ -17,11 +21,35 @@ header {
     border: 3px solid red;
 }
 
+
 main {
     background-color: mediumaquamarine;
 
     border: 3px solid black;
 }
+
+
+.wrapper {
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+.box {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+
+    /* width: 100px;
+    height: 100px; */
+    justify-content: center;
+    align-items: center;
+
+    border: 2px greenyellow solid;
+}
+
 
 footer {
     background-color: white;
