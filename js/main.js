@@ -14,19 +14,16 @@ function generateGrid(container) {
     container.innerHTML = ``;
 
     for (let i = 0; i < 100: i++) {
+        const cellElement = generateCell();
+        container.append(cellElement);
     }
 }
 
-function generateCell(index) {
+function generateCell() {
     const cell = document.createElement(`div`);
     cell.clsddList.add(`box`);
-    cell.setAttribute(`data-index`, index);
-
     cell.addEventListener(`click`, function () {
-        const number =parseInt(this.getAttribute(`data-index`));
-
-
-
-    }
-    )
+        this.classList.toggle(`toggle`);
+    });
+    return cell;
 }
