@@ -25,7 +25,7 @@ function generateCell() {
     cell.classList.add(`box`);
     cell.addEventListener(`click`, function () {
         this.classList.toggle(`toggle`);
-    });
+    })
     return cell;
 }
 
@@ -33,9 +33,8 @@ function generateCell() {
 
 //  CREARE NUMERI SULLE CELLE (E NON FUNZIONA IL TASTO PLAY)
 
-
 function generateBombList(bombs, numberOfCell) {
-    white (bombListi.lenght < bombs) {
+    while (bombListi.lenght < bombs) {
     const randomInt = getRandomNumber(0, numberOfCell - 1);
     if (!bombList.includes(randomInt)) {
         bombList.push(randomInt);
