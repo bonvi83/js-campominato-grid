@@ -5,7 +5,7 @@ const playButton = document.getElementById(`play`);
 generateGrid(gameboardElement);
 
 
-playButton.addEventListener(`click`, function (){
+playButton.addEventListener(`click`, function () {
     generateGrid(gameboardElement);
 });
 
@@ -31,4 +31,18 @@ function generateCell() {
 
 
 
-// E PER FARLO CONTARE CHE SI FA?
+//  CREARE NUMERI SULLE CELLE (E NON FUNZIONA IL TASTO PLAY)
+
+
+function generateBombList(bombs, numberOfCell) {
+    white (bombListi.lenght < bombs) {
+    const randomInt = getRandomNumber(0, numberOfCell - 1);
+    if (!bombList.includes(randomInt)) {
+        bombList.push(randomInt);
+    }}
+    return bombList;
+}
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() + ((max + 1) - min) + min);
+}
