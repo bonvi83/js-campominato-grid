@@ -1,4 +1,4 @@
-// DA ESERCIZIO DI QUESTA MATTINA SUPER COPIA ED INCOLLA, CHE OVVIAMENTE NON SERVE A NULLA
+// DA CORREZIONE TEACHER SUPER COPIA ED INCOLLA, CHE OVVIAMENTE NON SERVE A NULLA!!!
 
 const gameboardElement = document.getElementById(`gameboard`);
 const playButton = document.getElementById(`play`);
@@ -27,11 +27,12 @@ function generateCell() {
         this.classList.toggle(`toggle`);
     })
     return cell;
-}
+
+//  BISOGNA CREARE NUMERI SULLE CELLE (E NON FUNZIONA IL TASTO PLAY)
 
 
 
-//  CREARE NUMERI SULLE CELLE (E NON FUNZIONA IL TASTO PLAY)
+// da Luigi
 
 function generateBombList(bombs, numberOfCell) {
     while (bombListi.lenght < bombs) {
@@ -44,4 +45,4 @@ function generateBombList(bombs, numberOfCell) {
 
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() + ((max + 1) - min) + min);
-}
+}}
